@@ -29,3 +29,5 @@ node_modules
 temp/
 index.js
 sample/*.png
+
+.idea
