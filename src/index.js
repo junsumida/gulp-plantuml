@@ -18,6 +18,7 @@ module.exports = function(options) {
     args.push((ref = options.jarPath) != null ? ref : "plantuml.jar");
     args.push('-p');
     args.push('-tsvg');
+    args.push('-nometadata');
     return through.obj(function(file, encoding, callback) {
         var b, eb, original_file_path, program;
         if (file.isNull()) {
